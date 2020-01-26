@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Glitch Effect | Demo 3 </title>
+	<meta name="description" content="A glitch effect using CSS animations and clip-path" />
+	<meta name="keywords" content="glitch, effect, css, animations" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Barlow:500,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo3.css" />
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-3 loading">
+	<svg class="hidden">
+
+
+
+	</svg>
+	<main>
+		<div class="message">Sorry, your browser does not support clip-path on HTML elements!</div>
+		<div class="content content--top">
+			<header class="header">
+				<div class="links">
+					</a>
+				</div>
+				<h1 class="codrops-header__title">CSS Glitch Effect</h1>
+
+			</header>
+
+			<nav class="demos">
+				<a class="demo" href="index.html"><span>Demo 1</span></a>
+				<a class="demo" href="index2.html"><span>Demo 2</span></a>
+				<a class="demo demo--current" href="index3.html"><span>Demo 3</span></a>
+			</nav>
+		</div>
+		<div class="grid">
+			<div class="grid__item">
+				<div class="glitch glitch--style-1">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Prone <span>Abjectness</span></h2>
+			</div>
+			<div class="grid__item">
+				<div class="glitch glitch--style-2">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Equal <span>Undertaking</span></h2>
+			</div>
+			<div class="grid__item">
+				<div class="glitch glitch--vertical glitch--style-3">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Gifted <span>Skillfulness</span></h2>
+			</div>
+			<div class="grid__item">
+				<div class="glitch glitch--style-4">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Ideas<span>Creativity</span></h2>
+			</div>
+			<div class="grid__item">
+				<div class="glitch glitch--style-5">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Ground <span>Groovy</span></h2>
+			</div>
+			<div class="grid__item">
+				<div class="glitch glitch--style-6">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<h2 class="grid__item-title">Wide <span>Distraction</span></h2>
+			</div>
+		</div>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>

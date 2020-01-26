@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Glitch | Demo 1</title>
+	<meta name="description" content="A glitch effect using CSS animations and clip-path" />
+	<meta name="keywords" content="glitch, effect, css, animations" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-1 loading">
+	<svg class="hidden">
+
+
+	</svg>
+	<main>
+		<div class="message">Sorry, your browser does not support clip-path on HTML elements!</div>
+		<div class="content content--fixed">
+			<header class="header">
+				<div class="links">
+					<svg class="icon icon--arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg></a>
+
+
+				</div>
+				<h1 class="title">Glitch</h1>
+
+
+			</header>
+
+
+			<nav class="demos">
+				<a class="demo demo--current" href="index.html"><span>Demo 1</span></a>
+				<a class="demo" href="index2.html"><span>Demo 2</span></a>
+				<a class="demo" href="index3.html"><span>Demo 3</span></a>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="glitch">
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+			</div>
+			<h2 class="content__title">irie</h2>
+			<p class="content__text">A day in London. The park near Buckingham Palace.
+			</p>
+		</div>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>
